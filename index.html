@@ -5,13 +5,14 @@
         <meta lang="en">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Katherine Moore  |  Artist. Designer. Snail mom.</title>
-        <link rel="stylesheet" href="css/reset.css"> <!--SOURCE: https://meyerweb.com/eric/tools/css/reset/-->
-        <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" href="./css/reset.css"> <!--SOURCE: https://meyerweb.com/eric/tools/css/reset/-->
+        <link rel="stylesheet" href="./css/index.css">
     </head>
     <body>
-        <div id="preloader">
+        <!-- TODO: You want to add this div to the bottom of the page, past the footer -->
+        <!-- <div id="preloader">
             <img src="media/preloader-2.gif">
-        </div>
+        </div> -->
         <header class="navigation">
             <div class="inline-block logo">
                 <img src="media/Logo.png">
@@ -143,9 +144,21 @@
             <div id="copyright">
                 <p>&copy; Copyright 2023. All rights reserved.</p>
             </div>
-        </footer>
-        </footer>
+        </footer> <!-- This is the only footer tag you need. -->
+
+        <!-- This is where the preloader should go. -->
+        <div id="preloader">
+            <img src="./media/preloader-2.gif" alt="preloader">
+        </div>
+
+        <!-- </footer> TODO: remove this footer closing tag. -->
+
+        <!-- your scripts need to be called at the bottom of the screen just BEFORE the closing body tag. -->
+        
+        <!-- Loads jQuery. Your's wasn't working because you hadn't loaded jQuery, which is a requirement to be able to use the included jQuery function setTimeout() -->
+        <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+        
+        <script src="./js/index.js"></script>
+
     </body>
-    <script src="js/index.js">
-    </script>
 </html>
