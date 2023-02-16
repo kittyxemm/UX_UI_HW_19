@@ -362,8 +362,7 @@ h2 {
     font-family: 'Poppins', sans-serif;
     font-size: 14pt;
     line-height: 16pt;
-    /* margin-left:100px;
-    margin-right:100px; */
+
     margin-top:20px;
     grid-area: projDesc;
 }
@@ -411,14 +410,12 @@ h2 {
     align-items: center;
 }
 
-/* This preloader needs a few more properties for the animation to activate */
 #preloader img {
     margin: 0 auto;
     width: 800px;
     animation: spin 3s ease;
 }
 
-/* You also need to add your keyframe tag that explains the parameters of the animation. */
 @keyframe spin {
     transform: rotate(0deg);
     transform: rotate(360deg);
